@@ -2,10 +2,10 @@
 
 Input food emojis, output yummy recipes!
 
-* [ ] Dependecies;
-* [ ] Django;
-* [ ] Configuration via django-environ;
+* [x] Dependecies;
+* [x] Django;
+* [x] Configuration via django-environ;
 * [ ] Testing / coverage;
 * [ ] Continuous Integration
-* [ ] pre-commit;
+* [x] pre-commit;
 * [ ] Django modeling;
