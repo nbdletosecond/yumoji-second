@@ -2,14 +2,11 @@
 
 Input food emojis, output yummy recipes!
 
-* [x] Dependencies;
-* [x] Django;
-* [x] Configuration via django-environ;
-* [ ] Testing / coverage;
-* [ ] Continuous Integration
-* [x] pre-commit;
-* [ ] Django modeling;
-* [ ] Heroku;
+## Setup
+'''
+python3 -m venv venv
+pip install -r requirements-dev.txt -r requirements.txt
+'''
 
 Local superuser:
 Username: nbdyleto
