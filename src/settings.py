@@ -18,7 +18,10 @@ import environ
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(
+    ALLOWED_HOSTS=(list, []),
     DEBUG=(bool, False),
+    EMAIL_BACKEND=(str, "Replace with some email backend"),
+    ACCOUNT_DEFAULT_HTTP_PROTOCOL=(str, "https"),
 )
 environ.Env.read_env(BASE_DIR / ".env")
 
@@ -114,6 +117,12 @@ AUTHENTICATION_BACKENDS = [
     # `allauth` specific authentication methods, such as login by e-mail
     "allauth.account.auth_backends.AuthenticationBackend",
 ]
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
+
+# Email
+
+EMAIL_BACKEND = env("EMAIL_BACKEND")
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
