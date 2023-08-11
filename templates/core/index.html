@@ -1,4 +1,41 @@
 {% extends 'base.html'%}
-{% block content %}
-
+{% block main %}
+<section class="h-screen">
+    <div class="flex flex-col justify-center bg-rose-500 gap-2">
+        <section class="py-8 flex flex-col justify-center gap-4 container">
+            <div class="self-center">
+                <p class="tracking-widest text-white font-semibold">Make interesting recipes from emojis...</p>
+            </div>
+            <div class="w-9/12 md:h-16 flex flex-col md:flex-row justify-between gap-2 self-center  bg-white rounded-md">
+                <input class="w-1/2 md:w-1/4 text-xl self-center bg-transparent text-gray-700 focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-300 border-0 border-gray-300 rounded py-2 px-4 block appearance-none"
+                type="text" name="emojis" id="id_emojis" value="🍗🍇🧅">
+                <!-- Filter options -->
+                <div class="w-1/2 flex flex-col md:flex-row gap-2 self-center">
+                    <select class="tracking-wide text-gray-800 lowercase font-semibold text-sm block bg-transparent appearance-none focus:outline-none focus:border-transparent focus:ring-0 border-transparent w-full py-3 px-4 pr-8 rounded" id="grid-state">
+                        <option>🇧🇷 Brazilian</option>
+                        <option>🇲🇽 Mexican</option>
+                        <option>🇮🇹 Italian</option>
+                        <option>🇯🇵 Japanese</option>
+                    </select>
+                    <select class="tracking-wide text-gray-800 lowercase font-semibold text-sm block bg-transparent appearance-none focus:outline-none focus:border-transparent focus:ring-0 border-transparent w-full py-3 px-4 pr-8 rounded" id="grid-state">
+                        <option>🌅 Breakfast</option>
+                        <option>🌞 Lunch</option>
+                        <option>🕒 Snack</option>
+                        <option>🌚 Dinner</option>
+                    </select>
+                    <select class="tracking-wide text-gray-800 lowercase font-semibold text-sm block bg-transparent appearance-none focus:outline-none focus:border-transparent focus:ring-0 border-transparent w-full py-3 px-4 pr-8 rounded" id="grid-state">
+                        <option>5 minutes</option>
+                        <option>10 minutes</option>
+                        <option>15 minutes</option>
+                        <option>20 minutes</option>
+                        <option>25 minutes</option>
+                        <option>30 minutes</option>
+                        <option>40 minutes ></option>
+                    </select>
+                </div>
+                <button class="tracking-widest rounded-md px-7 py-2 m-2 bg-gray-900 text-white font-bold uppercase text-sm">Make recipe</button>
+            </div>
+        </section>
+    </div>
+</section>
 {% endblock %}
