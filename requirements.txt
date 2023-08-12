@@ -21,12 +21,15 @@ django==4.2.1
     #   -r requirements.in
     #   django-allauth
     #   django-browser-reload
+    #   django-htmx
     #   django-tailwind
 django-allauth==0.54.0
     # via -r requirements.in
 django-browser-reload==1.11.0
     # via django-tailwind
 django-environ==0.10.0
+    # via -r requirements.in
+django-htmx==1.16.0
     # via -r requirements.in
 django-tailwind[reload]==3.6.0
     # via -r requirements.in

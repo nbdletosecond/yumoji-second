@@ -2,3 +2,4 @@ Django==4.2.1
 django-allauth==0.54.0
 django-environ==0.10.0
 django-tailwind[reload]==3.6.0
+django-htmx==1.16.0
