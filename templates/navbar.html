@@ -1,4 +1,4 @@
-<div class="bg-rose-600">
+<div class="bg-gray-800">
     <div class="container py-4 px-4 md:px-24 w-full">
         <div class="flex flex-row justify-between text-white items-center">
             <div class="flex flex-row gap-2 text-sm">
@@ -6,7 +6,7 @@
                 <span>/</span>
                 <a href="" class="font-normal">PT</a>
             </div>
-            <a href='/' class="flex cursor-pointer flex-row text-2xl uppercase tracking-widest group">
+            <a href='/' class="flex cursor-pointer font-sans flex-row text-2xl uppercase tracking-widest group">
                 <span class="duration-300 group-hover:-translate-y-1 mr-1">🍑</span>
                 <span class="font-semibold text-white">Yum</span>
                 <span class="text-white">Oji</span>
@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<header class="sticky w-full top-0 bg-gradient-to-b from-rose-600 to-rose-500">
+<header class="sticky z-50 w-full top-0 bg-gray-800">
     <nav class="container px-4 md:px-24 py-2.5">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <div class="flex items-center lg:order-2">
@@ -29,8 +29,8 @@
                     <a href="{% url 'account_logout'%}" class="cursor-pointer border-gray-800 border rounded-md px-7 py-2 hover:bg-black text-gray-800 hover:text-white duration-500">Log-out</a>
                 {% else %}
                 <div class="flex flex-row gap-2 font-semibold text-sm">
-                    <a href="{% url 'account_signup' %}" class="cursor-pointer bg-gray-900 rounded-md px-7 py-2 text-white">Sign-up</a>
-                    <a href="{% url 'account_login'%}" class="cursor-pointer border-white border rounded-md px-7 py-2 hover:bg-black text-white hover:border-black duration-500">Log-in</a>
+                    <a href="{% url 'account_signup' %}" class="cursor-pointer bg-rose-500 rounded-md px-7 py-2 text-white tracking-widest">Sign-up</a>
+                    <a href="{% url 'account_login'%}" class="cursor-pointer border-white border rounded-md px-7 py-2 hover:bg-white hover:text-black text-white tracking-widest hover:border-white duration-500">Log-in</a>
                 </div>
                 {% endif %}
                 

@@ -1,12 +1,12 @@
 {% extends 'base.html'%}
 {% block main %}
-<section class="h-screen">
-    <div class="flex flex-col justify-center bg-rose-500 gap-2">
-        <section class="py-8 flex flex-col justify-center gap-4 container">
+<section>
+    <div class="flex flex-col justify-center bg-gradient-to-b from-gray-800 to-gray-900 gap-2">
+        <section class="py-8 flex flex-col justify-center gap-8 container">
             <div class="self-center">
-                <p class="tracking-widest text-white font-semibold">Make interesting recipes from emojis...</p>
+                <p class="tracking-widest text-white text-lg font-semibold">Make interesting recipes from emojis...</p>
             </div>
-            <div class="w-9/12 md:h-16 flex flex-col md:flex-row justify-between gap-2 self-center  bg-white rounded-md">
+            <div class="w-9/12 md:h-16 flex flex-col md:flex-row justify-between gap-2 self-center bg-gray-100 rounded-md">
                 <input class="w-1/2 md:w-1/4 text-xl self-center bg-transparent text-gray-700 focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-300 border-0 border-gray-300 rounded py-2 px-4 block appearance-none"
                 type="text" name="emojis" id="id_emojis" value="🍗🍇🧅">
                 <!-- Filter options -->
@@ -37,5 +37,57 @@
             </div>
         </section>
     </div>
+</section>
+
+<section>
+    <div class="bg-gray-900 pb-10">
+        <div class="flex flex-col container gap-8">
+            <div class="self-center mt-6">
+                <p class="tracking-widest text-white text-lg font-semibold">Or... explore the <strong>community</strong> recipes!</p>
+            </div>
+            <!-- Recipe Cards -->
+            <div class="flex flex-row gap-10 justify-center">
+                <div class="bg-gray-700 p-4 flex flex-col gap-3 rounded-md shadow-md shadow-gray-900 max-w-sm">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-row gap-4">
+                            <p class="text-rose-500 font-semibold uppercase text-sm">Brazilian</p>
+                            <p class="text-rose-500 font-semibold uppercase text-sm">Lunch</p>
+                            <p class="text-rose-500 font-semibold uppercase text-sm">Chicken</p>
+                        </div>
+                        <div class="flex flex-row gap-4">
+                        <p class="text-lg font-serif text-white font-semibold tracking-widest">Brazilian Delicious Meat </p>
+                        <p class="text-lg">🍗🍇🧅</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-4 text-white text-sm">        
+                        <div class="flex flex-row gap-1 items-center">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="12" r="10" stroke="#1f2937" stroke-width="1.5"></circle> <path d="M12 8V12L14.5 14.5" stroke="#1f2937" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            <p>15 minutes</p>
+                        </div>
+                        <div class="flex flex-row gap-1 items-center">
+                            <svg width="24px" height="24px" fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 104" enable-background="new 0 0 256 104" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M226.437,101.711c13.25,0,24.993-9.411,27.061-22.493c0.335-2.077,0.502-4.184,0.502-6.31 c0-25.771-24.6-48.303-61.336-60.647c0,0-18.728,30.517-18.733,30.525c-2.906,4.735-10.529,1.577-9.125-3.868l8.229-32.012 c-8.062-1.732-16.508-3.012-25.259-3.78l-24.324,39.66c-1.061,1.731-3.176,2.677-5.175,2.304c-2.785-0.518-4.659-3.423-3.95-6.173 l9.411-36.629c-9.401,0.157-18.526,0.935-27.287,2.205L72.944,42.796c-0.919,1.499-2.633,2.425-4.391,2.381 c-3.171-0.08-5.505-3.184-4.714-6.25L71.329,9.79C30.212,21.415,2,45.306,2,72.908c0,2.126,0.167,4.233,0.492,6.31 c2.077,13.082,13.821,22.493,27.07,22.493H226.437z"></path> </g></svg> 
+                            <p>5 Ingredients</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-400">
+                        There’s no better way to celebrate May being National Strawberry Month than by sharing a sweet treat with your pup!!! Strawberries...  
+                        </p>
+                    </div>
+                    <div class="flex flex-row gap-1 mt-2">
+                        <a href="" class="bg-rose-500 text-white text-center w-full rounded-md px-6 py-1.5">View Recipe</a>
+                        <a href="" class="group py-1.5 justify-center flex flex-row bg-white border border-black text-black w-1/2 rounded-md">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 6L7.5 5.25H16.5L17.25 6V19.3162L12 16.2051L6.75 19.3162V6ZM8.25 6.75V16.6838L12 14.4615L15.75 16.6838V6.75H8.25Z" fill="#000"></path> </g></svg>
+                            <span>Save</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    {% include 'about.html' %}
 </section>
 {% endblock %}
