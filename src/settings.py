@@ -89,6 +89,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "src.wsgi.application"
 
+NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
 # TailwindCSS
 TAILWIND_APP_NAME = "theme"
 INTERNAL_IPS = [
