@@ -8,7 +8,13 @@ def index(request: HttpRequest) -> HttpResponse:
     return render(request, "core/index.html", context)
 
 
-def emoji_options(request: HttpRequest) -> JsonResponse:
+def emoji_options() -> JsonResponse:
     emojis = ["🍔", "🍕", "🥗", "🍣", "🍦", "🍩"]
     context = {"emojis": emojis}
     return JsonResponse(context)
+
+
+def pricing(request: HttpRequest) -> HttpResponse:
+    """"""
+    context = {}
+    return render(request, "core/pricing.html", context)
